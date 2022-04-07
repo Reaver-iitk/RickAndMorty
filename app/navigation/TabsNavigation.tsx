@@ -1,10 +1,11 @@
 import React from 'react';
-import CharactersList from '../screens/CharacterList/components/CharactersList';
-import FavoritesList from '../screens/Favorite/components/FavoritesList';
-import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
+import { CharactersList } from '../screens/characterList/';
+import { FavoritesList } from '../screens/favorite/';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 const Tab = createMaterialTopTabNavigator();
-const RootNavigation = (): JSX.Element => {
+
+const TabNavigation = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name={'Characters'} component={CharactersList} />
@@ -13,4 +14,4 @@ const RootNavigation = (): JSX.Element => {
   );
 };
 
-export default RootNavigation;
+export default TabNavigation;

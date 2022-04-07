@@ -1,13 +1,15 @@
 import React from 'react';
-import {StyleSheet, View, Text, Pressable} from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
-export default function FavoritesList() {
+const LoadingScreen = () => {
   return (
     <View style={styles.body}>
-      <Text style={styles.text}>Screen B</Text>
+      <Text style={styles.text}>Загрузка...</Text>
     </View>
   );
-}
+};
+
+export { LoadingScreen };
 
 const styles = StyleSheet.create({
   body: {
